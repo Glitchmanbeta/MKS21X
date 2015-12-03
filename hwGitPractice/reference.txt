@@ -6,3 +6,4 @@ git commit- commits these changes to the repository
 git push- pushes the new changes to Github
 git pull- UPDATE!
 KAGATTE KOI! Because I can't type in Japanese on this computer. :(
+SOME BOGUS CHANGES
