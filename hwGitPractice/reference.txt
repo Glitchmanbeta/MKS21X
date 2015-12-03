@@ -1,0 +1,8 @@
+Ubuntu 12.04 "Precise Pangolin"
+Git Commands
+git clone <url>- one time use; clones the repository to your local hard drive.
+git add- adds files to the repository, locally
+git commit- commits these changes to the repository
+git push- pushes the new changes to Github
+git pull- UPDATE!
+KAGATTE KOI! Because I can't type in Japanese on this computer. :(
