@@ -14,6 +14,9 @@ public class TempConversionWindow extends JFrame implements ActionListener{
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 	pane = this.getContentPane();
 	pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
+	JButton b = new JButton("Convert to Fahrenheit");
+	b.addActionListener(this);
+	b.setActionCommand("toF");
 	
     }
     public void actionPerformed(ActionEvent e){
