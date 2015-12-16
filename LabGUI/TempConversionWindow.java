@@ -12,6 +12,9 @@ public class TempConversionWindow extends JFrame implements ActionListener{
 	this.setSize(640, 480);
 	this.setLocation(0, 0);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	pane = this.getContentPane();
+	pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
+	
     }
     public void actionPerformed(ActionEvent e){
 	System.out.println("An event occured!");
