@@ -18,13 +18,34 @@ public class TempConversionWindow extends JFrame implements ActionListener{
 	b.addActionListener(this);
 	b.setActionCommand("toF");
 	pane.add(b);
-	j = new JLabel("Testing!");
+	JButton b2 = new JButton("Convert to Celcius");
+	b2.addActionListener(this);
+	b2.setActionCommand("toC");
+	j = new JLabel("Testing");
+	bawks = new JTextField(10);
+	pane.add(bawks);
+	pane.add(b);
+	pane.add(b2);
 	pane.add(j);
+	
 	
     }
     public void actionPerformed(ActionEvent e){
-	System.out.println("An event occured!");
+	String event = e.getActionCommand();
+	if(event.equals("toF")){
+	    String s = bawks.getText();
+	    double x = Integer.parseInt(s);
+	    x = CtoF(x);
+	    j.setText(String.valueOf(x));
+	}
+	if(event.equals("toC")){
+	    String s = bawks.getText();
+	    double x = Integer.parseInt(s);
+	    x = FtoC(x);
+	    j.setText(String.valueOf(x));
+	}
     }
+
     public static double CtoF(double c){
 	return (9.0/5.0) * c + 32;
     }
