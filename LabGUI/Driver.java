@@ -3,5 +3,7 @@
 public class Driver{
     public static void main(String[]acks){
 	TempConversionWindow test = new TempConversionWindow();
+	test.pack();
+	test.setVisible(true);
     }
 }

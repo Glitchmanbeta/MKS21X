@@ -4,32 +4,38 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 public class TempConversionWindow extends JFrame implements ActionListener{
+    
     private Container pane;
     private JLabel j;
     private JTextField bawks;
+    
     public TempConversionWindow(){
 	this.setTitle("Temperature Conversion Tool");
 	this.setSize(640, 480);
 	this.setLocation(0, 0);
 	this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	
 	pane = this.getContentPane();
 	pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
+	
 	JButton b = new JButton("Convert to Fahrenheit");
 	b.addActionListener(this);
 	b.setActionCommand("toF");
-	pane.add(b);
+	
 	JButton b2 = new JButton("Convert to Celcius");
 	b2.addActionListener(this);
 	b2.setActionCommand("toC");
 	j = new JLabel("Testing");
 	bawks = new JTextField(10);
+	
 	pane.add(bawks);
 	pane.add(b);
 	pane.add(b2);
 	pane.add(j);
 	
-	
+
     }
+    
     public void actionPerformed(ActionEvent e){
 	String event = e.getActionCommand();
 	if(event.equals("toF")){
