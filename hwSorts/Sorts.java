@@ -8,9 +8,7 @@ public class Sorts{
 	test[3] = 5;
 	test[4] = 0;
 	test[5] = 3;
-	if(args[0] == "selection"){
-	    selectionSort(test);
-	}
+	selectionSort(test);
     }
     
     public static void selectionSort(int[] data){
@@ -21,6 +19,7 @@ public class Sorts{
 		if(data[counter] < min){
 		    min = data[counter];
 		}
+		counter++;
 	    }
 	    data[counter] = data[i];
 	    data[i] = min;
