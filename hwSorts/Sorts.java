@@ -8,22 +8,24 @@ public class Sorts{
 	test[3] = 5;
 	test[4] = 0;
 	test[5] = 3;
-	selectionSort(test);
+	insertionSort(test);
     }
     
-    public static void selectionSort(int[] data){
+    public static void insertionSort(int[] data){
 	int min = data[0];
+	int index = 0;
 	for(int i = 0; i < data.length; i++){
 	    int counter = 0;
 	    while(counter < data.length){
 		if(data[counter] < min){
+		    index = counter;
 		    min = data[counter];
 		}
 		counter++;
 	    }
-	    data[counter] = data[i];
+	    data[index] = data[i];
 	    data[i] = min;
-	    System.out.println(data.toString());
+	    System.out.println(Arrays.toString(data));
 	}
     }
 }
